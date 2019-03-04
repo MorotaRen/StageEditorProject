@@ -166,10 +166,10 @@ namespace basecross {
 			}
 			if (SelectObj) {
 				SelectObj->SetSelected(true);
+				m_SelectObj = SelectObj;
 			}
 		}
 	}
-
 
 	//マウスの左ボタン(離した)
 	void GameStage::OnLButtonUp() {

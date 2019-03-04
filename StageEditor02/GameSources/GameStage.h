@@ -5,6 +5,7 @@
 
 #pragma once
 #include "stdafx.h"
+#include "Project.h"
 
 namespace basecross {
 
@@ -45,9 +46,13 @@ public:
 	//マウスのLボタンが押されているか
 	bool IsLButtonDown();
 
+	shared_ptr<GameObject> m_SelectObj;
+
+	shared_ptr<GameObject> GetSelectObj() {
+		return m_SelectObj;
+	}
+
 };
-
-
 }
 //end basecross
 

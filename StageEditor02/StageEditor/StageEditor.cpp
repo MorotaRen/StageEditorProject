@@ -25,6 +25,7 @@ BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CStageEditorApp::OnAppAbout)
 	ON_COMMAND(ID_32771, &CStageEditorApp::OnObjProp)
 	ON_COMMAND(ID_32772, &CStageEditorApp::OnSaveData)
+	ON_COMMAND(ID_Scale,&CStageEditorApp::CustomScale)
 END_MESSAGE_MAP()
 
 
@@ -205,8 +206,19 @@ BOOL CStageEditorApp::OnIdle(LONG lCount)
 //	return CWinApp::OnIdle(lCount);
 }
 
-
-
+void CStageEditorApp::CustomScale() {
+	auto stage = App::GetApp()->GetScene<Scene>()->GetActiveTypeStage<GameStage>();
+	auto SeleObj = stage->GetSelectObj();
+	CObjPropDlg objpropDlg;
+	objpropDlg.SetNew(true);
+	if (objpropDlg.DoModal() == IDOK) {
+		StParams params;
+		params.m_Scale.x = objpropDlg.m_ScaleX;
+		params.m_Scale.y = objpropDlg.m_ScaleY;
+		params.m_Scale.z = objpropDlg.m_ScaleZ;
+		SeleObj->GetComponent<Transform>()->SetScale(params.m_Scale.x, params.m_Scale.y, params.m_Scale.z);
+	}
+}
 
 void CStageEditorApp::OnObjProp()
 {

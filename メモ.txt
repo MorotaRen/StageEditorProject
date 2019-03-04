@@ -1,0 +1,14 @@
+//IDナンバーの登録
+StageEditorのResouse.hに書き込むこと
+```
+#define ID名	番号
+
+```
+※番号はほかのものと被らないものにすること！
+
+//IDにコマンド登録
+```
+BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
+	ON_COMMAND(IDナンバー, &関数名)
+END_MESSAGE_MAP()
+```
