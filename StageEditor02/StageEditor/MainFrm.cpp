@@ -7,6 +7,8 @@
 
 #include "MainFrm.h"
 #include "Project.h"
+#include "ScaleEdit.h"
+
 using namespace basecross;
 
 #ifdef _DEBUG
@@ -91,6 +93,10 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 
 	cs.dwExStyle &= ~WS_EX_CLIENTEDGE;
 	cs.lpszClass = AfxRegisterWndClass(0);
+	ScaleEdit* scaleedit = new ScaleEdit(this);
+	scaleedit->Create(IDD_Scale,this);
+	scaleedit->ShowWindow(SW_SHOW);
+
 	return TRUE;
 }
 

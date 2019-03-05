@@ -148,6 +148,7 @@ using namespace Microsoft::WRL::Details;
 
 #include "../../Libs/BaseLib/Dx11Lib/Common.h"
 #include "../../Libs/BaseLib/Dx11FullLib/FullCommon.h"
+#include <afxcontrolbars.h>
 using namespace basecross::bsm;
 
 

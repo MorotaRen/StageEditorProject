@@ -8,7 +8,7 @@
 #include "StageEditor.h"
 #include "MainFrm.h"
 #include "ObjPropDlg.h"
-
+#include "ScaleEdit.h"
 
 #include "Project.h"
 using namespace basecross;
@@ -25,7 +25,7 @@ BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CStageEditorApp::OnAppAbout)
 	ON_COMMAND(ID_32771, &CStageEditorApp::OnObjProp)
 	ON_COMMAND(ID_32772, &CStageEditorApp::OnSaveData)
-	ON_COMMAND(ID_Scale,&CStageEditorApp::CustomScale)
+	ON_COMMAND(ID_Scale,&ScaleEdit::ScaleEditXYZ)
 END_MESSAGE_MAP()
 
 
@@ -256,4 +256,20 @@ void CStageEditorApp::OnSaveData()
 	{
 		AfxMessageBox(dlg.GetFileName());
 	}
+}
+
+void ScaleEdit::ScaleEditXYZ() {
+	// TODO: ここにコマンド ハンドラー コードを追加します。
+	ScaleEdit dialog;
+
+	//if (dialog.DoModal() == IDOK) {
+		//auto stage = App::GetApp()->GetScene<Scene>()->GetActiveTypeStage<GameStage>();
+		//auto SeleObj = stage->GetSelectObj();
+		//StParams params;
+		//params.m_Scale.x = dialog.m_ScaleX;
+		//params.m_Scale.y = dialog.m_ScaleY;
+		//params.m_Scale.z = dialog.m_ScaleZ;
+		//SeleObj->GetComponent<Transform>()->SetScale(params.m_Scale.x, params.m_Scale.y, params.m_Scale.z);
+	//}
+
 }

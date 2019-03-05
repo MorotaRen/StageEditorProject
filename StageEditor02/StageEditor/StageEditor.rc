@@ -94,6 +94,7 @@ BEGIN
     POPUP "オブジェクト(&O)"
     BEGIN
         MENUITEM "新規追加(&N)",                    ID_32771
+        MENUITEM "スケール変更(&R)",                  ID_Scale
     END
     POPUP "ヘルプ(&H)"
     BEGIN
@@ -173,6 +174,22 @@ BEGIN
     EDITTEXT        IDC_POSITION_Z_EDIT,190,90,40,14,ES_AUTOHSCROLL
 END
 
+IDD_ChangeScale DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scale変更"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,252,155,50,14
+    LTEXT           "スケールの変更",IDC_STATIC,17,9,49,8
+    LTEXT           "X",IDC_STATIC,14,38,8,8
+    LTEXT           "Z",IDC_STATIC,14,105,8,8
+    LTEXT           "Y",IDC_STATIC,14,72,8,8
+    EDITTEXT        IDC_ScaleEDIT_X,30,35,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ScaleEDIT_Y,30,68,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ScaleEDIT_Z,30,103,40,14,ES_AUTOHSCROLL
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -236,6 +253,13 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 205
     END
+
+    IDD_ChangeScale, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        BOTTOMMARGIN, 169
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -246,6 +270,11 @@ END
 //
 
 IDD_DLG_OBJ_PROP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ChangeScale AFX_DIALOG_LAYOUT
 BEGIN
     0
 END
