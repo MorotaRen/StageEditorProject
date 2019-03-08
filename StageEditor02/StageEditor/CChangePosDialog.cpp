@@ -49,7 +49,7 @@ BEGIN_MESSAGE_MAP(CChangePosDialog, CDialogEx)
 	ON_EN_UPDATE(IDC_EDITPOSZ, &CChangePosDialog::OnUpdateEditposz)
 	ON_BN_CLICKED(IDOK, &CChangePosDialog::OnBnClickedOk)
 	ON_BN_CLICKED(IDCANCEL, &CChangePosDialog::OnBnClickedCancel)
-	//ON_COMMAND(ID_32780, &CChangePosDialog::ChangePos_MS)
+	ON_COMMAND(ID_32780, &CChangePosDialog::ChangePos)
 END_MESSAGE_MAP()
 
 
