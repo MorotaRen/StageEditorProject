@@ -36,6 +36,7 @@ public:
 	afx_msg void OnObjProp();
 	afx_msg void OnSaveData();
 	afx_msg void CustomScale();
+
 };
 
 extern CStageEditorApp theApp;

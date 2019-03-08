@@ -25,7 +25,7 @@ BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CStageEditorApp::OnAppAbout)
 	ON_COMMAND(ID_32771, &CStageEditorApp::OnObjProp)
 	ON_COMMAND(ID_32772, &CStageEditorApp::OnSaveData)
-	ON_COMMAND(ID_Scale,&ScaleEdit::ScaleEditXYZ)
+	ON_COMMAND(ID_Scale,&ScaleEdit::OnScale)
 END_MESSAGE_MAP()
 
 
