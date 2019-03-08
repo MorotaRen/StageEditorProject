@@ -26,12 +26,8 @@ BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CStageEditorApp::OnAppAbout)
 	ON_COMMAND(ID_32771, &CStageEditorApp::OnObjProp)
 	ON_COMMAND(ID_32772, &CStageEditorApp::OnSaveData)
-<<<<<<< HEAD
 	ON_COMMAND(ID_Scale,&ScaleEdit::OnScale)
-=======
-	ON_COMMAND(ID_Scale,&ScaleEdit::ScaleEditXYZ)
 	ON_COMMAND(ID_32780, &CChangePosDialog::ChangePos)
->>>>>>> 3d7b8fe0100c453890f38b8c3a667472cdb113b2
 END_MESSAGE_MAP()
 
 
@@ -282,4 +278,6 @@ void ScaleEdit::ScaleEditXYZ() {
 
 void CChangePosDialog::ChangePos() {
 	CChangePosDialog dialog;
+	if (dialog.DoModal() == IDOK) {
+	}
 }
