@@ -27,6 +27,7 @@ BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
 	ON_COMMAND(ID_32771, &CStageEditorApp::OnObjProp)
 	ON_COMMAND(ID_32772, &CStageEditorApp::OnSaveData)
 	ON_COMMAND(ID_Scale,&ScaleEdit::ScaleEditXYZ)
+	ON_COMMAND(ID_32780, &CChangePosDialog::ChangePos)
 END_MESSAGE_MAP()
 
 
@@ -273,4 +274,8 @@ void ScaleEdit::ScaleEditXYZ() {
 		//SeleObj->GetComponent<Transform>()->SetScale(params.m_Scale.x, params.m_Scale.y, params.m_Scale.z);
 	//}
 
+}
+
+void CChangePosDialog::ChangePos() {
+	CChangePosDialog dialog;
 }

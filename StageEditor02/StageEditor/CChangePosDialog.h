@@ -21,8 +21,15 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
-	afx_msg void OnEnChangeEditposx();
-	CString m_PosX;
-	CString m_PosY;
-	CString m_PosZ;
+	afx_msg void OnEnUpdateEditposx();
+	afx_msg void OnAppAbout();
+	float m_PosX;
+	float m_PosY;
+	float m_PosZ;
+	afx_msg void OnUpdateEditposy();
+	afx_msg void OnUpdateEditposz();
+	afx_msg void OnBnClickedOk();
+	afx_msg void OnBnClickedCancel();
+	//afx_msg void ChangePos_MS();
+	afx_msg void ChangePos();
 };
