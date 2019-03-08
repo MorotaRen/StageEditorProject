@@ -9,6 +9,7 @@
 #include "MainFrm.h"
 #include "ObjPropDlg.h"
 #include "ScaleEdit.h"
+#include "CChangePosDialog.h"
 
 #include "Project.h"
 using namespace basecross;
