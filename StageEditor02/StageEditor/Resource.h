@@ -23,17 +23,20 @@
 #define IDC_POSITION_Y_EDIT             1009
 #define IDC_ScaleEDIT_Z                 1009
 #define IDC_POSITION_Z_EDIT             1010
+#define IDC_SLIDER_SCALE_X              1014
+#define IDC_SLIDER_SCALE_Y              1015
+#define IDC_SLIDER_SCALE_Z              1016
 #define ID_32771                        32771
 #define ID_32772                        32772
 #define ID_Scale                        32773
 
 // Next default values for new objects
-// 
+//
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        316
 #define _APS_NEXT_COMMAND_VALUE         32780
-#define _APS_NEXT_CONTROL_VALUE         1014
+#define _APS_NEXT_CONTROL_VALUE         1017
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif
