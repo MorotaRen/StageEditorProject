@@ -9,6 +9,7 @@
 #include "MainFrm.h"
 #include "ObjPropDlg.h"
 #include "ScaleEdit.h"
+#include "CChangePosDialog.h"
 
 #include "Project.h"
 using namespace basecross;
@@ -25,7 +26,12 @@ BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CStageEditorApp::OnAppAbout)
 	ON_COMMAND(ID_32771, &CStageEditorApp::OnObjProp)
 	ON_COMMAND(ID_32772, &CStageEditorApp::OnSaveData)
+<<<<<<< HEAD
 	ON_COMMAND(ID_Scale,&ScaleEdit::OnScale)
+=======
+	ON_COMMAND(ID_Scale,&ScaleEdit::ScaleEditXYZ)
+	ON_COMMAND(ID_32780, &CChangePosDialog::ChangePos)
+>>>>>>> 3d7b8fe0100c453890f38b8c3a667472cdb113b2
 END_MESSAGE_MAP()
 
 
@@ -272,4 +278,8 @@ void ScaleEdit::ScaleEditXYZ() {
 		//SeleObj->GetComponent<Transform>()->SetScale(params.m_Scale.x, params.m_Scale.y, params.m_Scale.z);
 	//}
 
+}
+
+void CChangePosDialog::ChangePos() {
+	CChangePosDialog dialog;
 }
