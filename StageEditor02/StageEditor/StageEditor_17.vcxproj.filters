@@ -42,9 +42,6 @@
     <ClInclude Include="ScaleEdit.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ScaleEdit_Slider.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="CChangePosDialog.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
@@ -66,9 +63,6 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ScaleEdit.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="ScaleEdit_Slider.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="CChangePosDialog.cpp">

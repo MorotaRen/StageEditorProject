@@ -30,6 +30,7 @@
 #define IDC_EDITPOSX                    1017
 #define IDC_EDITPOSY                    1018
 #define IDC_EDITPOSZ                    1019
+#define IDC_STATIC_X                    1020
 #define ID_32771                        32771
 #define ID_32772                        32772
 #define ID_Scale                        32773
@@ -41,7 +42,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        318
 #define _APS_NEXT_COMMAND_VALUE         32781
-#define _APS_NEXT_CONTROL_VALUE         1020
+#define _APS_NEXT_CONTROL_VALUE         1021
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif

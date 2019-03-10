@@ -93,9 +93,9 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 
 	cs.dwExStyle &= ~WS_EX_CLIENTEDGE;
 	cs.lpszClass = AfxRegisterWndClass(0);
-	ScaleEdit* scaleedit = new ScaleEdit(this);
-	scaleedit->Create(IDD_Scale,this);
-	scaleedit->ShowWindow(SW_SHOW);
+	ScaleEdit* se = new ScaleEdit(this);
+	se->Create(IDD_ChangeScale,this);
+	se->ShowWindow(SW_SHOW);
 
 	return TRUE;
 }

@@ -136,7 +136,6 @@
     <ClInclude Include="ObjPropDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="ScaleEdit.h" />
-    <ClInclude Include="ScaleEdit_Slider.h" />
     <ClInclude Include="StageEditor.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -147,7 +146,6 @@
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="ObjPropDlg.cpp" />
     <ClCompile Include="ScaleEdit.cpp" />
-    <ClCompile Include="ScaleEdit_Slider.cpp" />
     <ClCompile Include="StageEditor.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
