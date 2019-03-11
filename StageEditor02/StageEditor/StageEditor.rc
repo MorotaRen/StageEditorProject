@@ -96,6 +96,7 @@ BEGIN
         MENUITEM "新規追加(&N)",                    ID_32771
         MENUITEM "スケール変更(&R)",                  ID_Scale
         MENUITEM "位置変更",                        ID_32780
+        MENUITEM "コンポーネントの追加",                  ID_AddCompoment
     END
     POPUP "ヘルプ(&H)"
     BEGIN
@@ -212,6 +213,17 @@ BEGIN
     EDITTEXT        IDC_EDITPOSZ,134,47,40,14,ES_AUTOHSCROLL
 END
 
+IDD_AddCompoment DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "コンポーネント追加"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,252,155,50,14
+    COMBOBOX        IDC_AddCompoment,26,37,143,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "追加したいコンポーネント",IDC_STATIC_Compoment,26,21,78,8
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -290,6 +302,14 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 169
     END
+
+    IDD_AddCompoment, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -323,6 +343,11 @@ BEGIN
 END
 
 IDD_ChangePos AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_AddCompoment AFX_DIALOG_LAYOUT
 BEGIN
     0
 END

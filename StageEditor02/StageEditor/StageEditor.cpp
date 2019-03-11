@@ -10,6 +10,7 @@
 #include "ObjPropDlg.h"
 #include "ScaleEdit.h"
 #include "CChangePosDialog.h"
+#include "CompomentEdit.h"
 
 #include "Project.h"
 using namespace basecross;
@@ -28,6 +29,7 @@ BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
 	ON_COMMAND(ID_32772, &CStageEditorApp::OnSaveData)
 	ON_COMMAND(ID_Scale, &ScaleEdit::OnAppAbout)
 	ON_COMMAND(ID_32780, &CChangePosDialog::ChangePos)
+	ON_COMMAND(ID_AddCompoment, &CompomentEdit::OnAppAbout)
 END_MESSAGE_MAP()
 
 

@@ -152,6 +152,7 @@ using namespace Microsoft::WRL::Details;
 #include <afxcontrolbars.h>
 #include <afxcontrolbars.h>
 #include <afxcontrolbars.h>
+#include <afxcontrolbars.h>
 using namespace basecross::bsm;
 
 

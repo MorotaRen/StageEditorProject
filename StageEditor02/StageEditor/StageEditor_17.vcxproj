@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="CChangePosDialog.h" />
     <ClInclude Include="ChildView.h" />
+    <ClInclude Include="CompomentEdit.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="ObjPropDlg.h" />
     <ClInclude Include="Resource.h" />
@@ -143,6 +144,7 @@
   <ItemGroup>
     <ClCompile Include="CChangePosDialog.cpp" />
     <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="CompomentEdit.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="ObjPropDlg.cpp" />
     <ClCompile Include="ScaleEdit.cpp" />
