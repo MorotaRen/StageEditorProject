@@ -31,13 +31,15 @@
 #define IDC_EDITPOSY                    1018
 #define IDC_EDITPOSZ                    1019
 #define IDC_STATIC_X                    1020
+#define IDC_STATIC_Y                    1021
+#define IDC_STATIC_Z                    1022
 #define ID_32771                        32771
 #define ID_32772                        32772
 #define ID_Scale                        32773
 #define ID_32780                        32780
 
 // Next default values for new objects
-// 
+//
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        318

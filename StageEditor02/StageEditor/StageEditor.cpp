@@ -26,7 +26,7 @@ BEGIN_MESSAGE_MAP(CStageEditorApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CStageEditorApp::OnAppAbout)
 	ON_COMMAND(ID_32771, &CStageEditorApp::OnObjProp)
 	ON_COMMAND(ID_32772, &CStageEditorApp::OnSaveData)
-	ON_COMMAND(ID_Scale, &ScaleEdit::OnScale)
+	ON_COMMAND(ID_Scale, &ScaleEdit::OnAppAbout)
 	ON_COMMAND(ID_32780, &CChangePosDialog::ChangePos)
 END_MESSAGE_MAP()
 
@@ -208,20 +208,6 @@ BOOL CStageEditorApp::OnIdle(LONG lCount)
 //	return CWinApp::OnIdle(lCount);
 }
 
-void CStageEditorApp::CustomScale() {
-	auto stage = App::GetApp()->GetScene<Scene>()->GetActiveTypeStage<GameStage>();
-	auto SeleObj = stage->GetSelectObj();
-	CObjPropDlg objpropDlg;
-	objpropDlg.SetNew(true);
-	if (objpropDlg.DoModal() == IDOK) {
-		StParams params;
-		params.m_Scale.x = objpropDlg.m_ScaleX;
-		params.m_Scale.y = objpropDlg.m_ScaleY;
-		params.m_Scale.z = objpropDlg.m_ScaleZ;
-		SeleObj->GetComponent<Transform>()->SetScale(params.m_Scale.x, params.m_Scale.y, params.m_Scale.z);
-	}
-}
-
 void CStageEditorApp::OnObjProp()
 {
 	CObjPropDlg objpropDlg;
@@ -259,23 +245,6 @@ void CStageEditorApp::OnSaveData()
 		AfxMessageBox(dlg.GetFileName());
 	}
 }
-
-void ScaleEdit::ScaleEditXYZ() {
-	// TODO: ここにコマンド ハンドラー コードを追加します。
-	ScaleEdit dialog;
-
-	//if (dialog.DoModal() == IDOK) {
-		//auto stage = App::GetApp()->GetScene<Scene>()->GetActiveTypeStage<GameStage>();
-		//auto SeleObj = stage->GetSelectObj();
-		//StParams params;
-		//params.m_Scale.x = dialog.m_ScaleX;
-		//params.m_Scale.y = dialog.m_ScaleY;
-		//params.m_Scale.z = dialog.m_ScaleZ;
-		//SeleObj->GetComponent<Transform>()->SetScale(params.m_Scale.x, params.m_Scale.y, params.m_Scale.z);
-	//}
-
-}
-
 void CChangePosDialog::ChangePos() {
 	CChangePosDialog dialog;
 	if (dialog.DoModal() == IDOK) {
