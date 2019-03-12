@@ -40,6 +40,8 @@
 #define IDC_STATIC_Compoment            1023
 #define IDC_SLIDER1                     1020
 
+#define IDC_STATICCompomentText         1024
+#define IDC_STATICCompomentTitleText    1025
 #define ID_32771                        32771
 #define ID_32772                        32772
 #define ID_Scale                        32773
@@ -60,6 +62,7 @@
 #define _APS_NEXT_COMMAND_VALUE         32781
 #define _APS_NEXT_CONTROL_VALUE         1021
 >>>>>>> Stashed changes
+#define _APS_NEXT_CONTROL_VALUE         1026
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif

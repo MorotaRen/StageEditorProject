@@ -51,7 +51,6 @@ public:
 	shared_ptr<GameObject> GetSelectObj() {
 		return m_SelectObj;
 	}
-
 };
 }
 //end basecross
