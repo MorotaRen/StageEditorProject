@@ -37,6 +37,8 @@
 #define IDC_AddCompoment                1021
 #define IDC_STATIC_Z                    1022
 #define IDC_STATIC_Compoment            1023
+#define IDC_STATICCompomentText         1024
+#define IDC_STATICCompomentTitleText    1025
 #define ID_32771                        32771
 #define ID_32772                        32772
 #define ID_Scale                        32773
@@ -50,7 +52,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        320
 #define _APS_NEXT_COMMAND_VALUE         32783
-#define _APS_NEXT_CONTROL_VALUE         1024
+#define _APS_NEXT_CONTROL_VALUE         1026
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif
