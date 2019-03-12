@@ -220,7 +220,7 @@ FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
     PUSHBUTTON      "キャンセル",IDCANCEL,252,155,50,14
-    COMBOBOX        IDC_AddCompoment,26,37,143,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AddCompoment,26,37,143,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
     LTEXT           "追加したいコンポーネント",IDC_STATIC_Compoment,26,21,78,8
     LTEXT           "コンポーネントの説明",IDC_STATICCompomentText,24,70,269,65
     LTEXT           "コンポーネントの説明",IDC_STATICCompomentTitleText,24,58,66,8
