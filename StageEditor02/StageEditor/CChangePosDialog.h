@@ -32,4 +32,8 @@ public:
 	afx_msg void OnBnClickedCancel();
 	//afx_msg void ChangePos_MS();
 	afx_msg void ChangePos();
+	afx_msg void OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar);
+	afx_msg void OnNMCustomdrawSlider1(NMHDR *pNMHDR, LRESULT *pResult);
+	CSliderCtrl m_TestSlider;
+	afx_msg void OnUpdateIddChangepos(CCmdUI *pCmdUI);
 };

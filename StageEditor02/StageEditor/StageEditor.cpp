@@ -247,8 +247,8 @@ void CStageEditorApp::OnSaveData()
 		AfxMessageBox(dlg.GetFileName());
 	}
 }
-void CChangePosDialog::ChangePos() {
-	CChangePosDialog dialog;
-	if (dialog.DoModal() == IDOK) {
-	}
-}
+//void CChangePosDialog::ChangePos() {
+//	CChangePosDialog dialog;
+//	if (dialog.DoModal() == IDOK) {
+//	}
+//}
