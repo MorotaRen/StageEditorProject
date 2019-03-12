@@ -8,6 +8,7 @@
 #include "MainFrm.h"
 #include "Project.h"
 #include "ScaleEdit.h"
+#include "CChangePosDialog.h"
 
 using namespace basecross;
 
@@ -97,6 +98,10 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 	ScaleEdit* se = new ScaleEdit(this);
 	se->Create(IDD_ChangeScale,this);
 	se->ShowWindow(SW_SHOW);
+
+	CChangePosDialog* dialog = new CChangePosDialog(this);
+	dialog->Create(IDD_ChangePos, this);
+	dialog->ShowWindow(SW_SHOW);
 
 	return TRUE;
 }
