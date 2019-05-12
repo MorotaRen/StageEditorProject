@@ -4,7 +4,7 @@
 
 #include "stdafx.h"
 #include "StageEditor.h"
-
+#include "Resource.h"
 #include "MainFrm.h"
 #include "Project.h"
 #include "ScaleEdit.h"
@@ -21,6 +21,7 @@ using namespace basecross;
 IMPLEMENT_DYNAMIC(CMainFrame, CFrameWnd)
 
 BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
+	ON_COMMAND(IDC_ToolScale,CMainFrame::windowScale)
 	ON_WM_CREATE()
 	ON_WM_SETFOCUS()
 END_MESSAGE_MAP()
@@ -70,7 +71,16 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		AfxMessageBox(L"原因不明のエラーです");
 		return -1;
 	}
-
+	if (!m_toolbar.CreateEx(GetDesktopWindow(), TBSTYLE_FLAT, WS_CHILD | WS_VISIBLE | CBRS_TOP
+		| CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC) ||
+		!m_toolbar.LoadToolBar(IDT_Scale)) {
+		TRACE0("ツールバーの作成に失敗しました。\n");
+		return -1;
+	}
+	 //ドッキング可能に設定する場合
+	m_toolbar.EnableDocking(CBRS_ALIGN_ANY);
+	EnableDocking(CBRS_ALIGN_ANY);
+	DockControlBar(&m_toolbar);
 	return 0;
 }
 
@@ -95,15 +105,20 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 	cs.dwExStyle &= ~WS_EX_CLIENTEDGE;
 	cs.lpszClass = AfxRegisterWndClass(0);
 
-	ScaleEdit* se = new ScaleEdit(this);
-	se->Create(IDD_ChangeScale,this);
-	se->ShowWindow(SW_SHOW);
+
+
 
 	CChangePosDialog* dialog = new CChangePosDialog(this);
 	dialog->Create(IDD_ChangePos, this);
 	dialog->ShowWindow(SW_SHOW);
 
 	return TRUE;
+}
+
+void CMainFrame::windowScale() {
+	ScaleEdit* se = new ScaleEdit(GetDesktopWindow());
+	se->Create(IDD_ChangeScale, GetDesktopWindow());
+	se->ShowWindow(SW_SHOW);
 }
 
 // CMainFrame 診断

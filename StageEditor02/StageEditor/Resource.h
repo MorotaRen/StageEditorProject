@@ -31,7 +31,6 @@
 #define IDC_EDITPOSX                    1017
 #define IDC_EDITPOSY                    1018
 #define IDC_EDITPOSZ                    1019
-
 #define IDC_STATIC_X                    1020
 #define IDC_STATIC_Y                    1021
 #define IDC_COMBO1                      1021
@@ -39,29 +38,25 @@
 #define IDC_STATIC_Z                    1022
 #define IDC_STATIC_Compoment            1023
 #define IDC_SLIDER1                     1020
-
 #define IDC_STATICCompomentText         1024
 #define IDC_STATICCompomentTitleText    1025
+#define IDT_Scale						1026
 #define ID_32771                        32771
 #define ID_32772                        32772
 #define ID_Scale                        32773
 #define ID_32780                        32780
 #define ID_32781                        32781
 #define ID_AddCompoment                 32782
+#define ID_BUTTON32782                  32782
+#define IDB_Scale                       32783
+#define IDC_ToolScale                   32784
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-<<<<<<< Updated upstream
-#define _APS_NEXT_RESOURCE_VALUE        320
-#define _APS_NEXT_COMMAND_VALUE         32783
-#define _APS_NEXT_CONTROL_VALUE         1024
-=======
-#define _APS_NEXT_RESOURCE_VALUE        318
-#define _APS_NEXT_COMMAND_VALUE         32781
-#define _APS_NEXT_CONTROL_VALUE         1021
->>>>>>> Stashed changes
+#define _APS_NEXT_RESOURCE_VALUE        321
+#define _APS_NEXT_COMMAND_VALUE         32785
 #define _APS_NEXT_CONTROL_VALUE         1026
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
