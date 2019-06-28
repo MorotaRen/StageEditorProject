@@ -1,0 +1,4 @@
+# StageEditorProject
+BaseCrossのステージエディタ
+エディタを作ってみよう企画初代
+更新は遅いですがボチボチ進めていきます。
